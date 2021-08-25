@@ -1,0 +1,20 @@
+sudo apt install software-properties-common
+sudo add-apt-repository -y ppa:ethereum/ethereum
+sudo apt update -y
+sudo apt install ethereum -y
+sudo snap install node --classic --channel=14
+sudo apt install -y build-essential
+
+git clone git@github.com:lucastheo/ethereum-gas-price-study.git
+
+cd ethereum-gas-price-study/ethereum\ network\ local
+sudo npm install
+sudo npm install -g truffle@5.3.6
+
+#caso der erro utilizar e reexecutar o comando acima
+#sudo npm cache clean -f
+#sudo npm install -g n
+#sudo n stable
+#sudo npm install npm -g
+
+sudo npm install -g ganache-cli
